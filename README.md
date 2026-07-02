@@ -1,160 +1,78 @@
-\# Quotes Web Scraper
+# Quotes Web Scraper
 
+## Overview
 
+This project is a Python web scraper that extracts quotes and their authors from the **Quotes to Scrape** website. The scraped data is exported to an Excel file for further analysis.
 
-\## Overview
+## Features
 
-This project is a Python web scraper that extracts quotes and their authors from the "Quotes to Scrape" website. The scraped data is stored in an Excel file for further analysis.
+- Scrapes quotes and authors from multiple pages.
+- Handles HTTP request errors using `try-except`.
+- Parses HTML using BeautifulSoup.
+- Exports the scraped data to an Excel file using Pandas.
 
+## Technologies Used
 
+- Python
+- Requests
+- BeautifulSoup4
+- Pandas
+- OpenPyXL
 
-\## Features
+## Project Structure
 
-\- Scrapes quotes and authors from multiple pages.
-
-\- Handles HTTP request errors using `try-except`.
-
-\- Parses HTML using BeautifulSoup.
-
-\- Exports the scraped data to an Excel file using Pandas.
-
-
-
-\## Technologies Used
-
-\- Python
-
-\- Requests
-
-\- BeautifulSoup4
-
-\- Pandas
-
-\- OpenPyXL
-
-
-
-\## Project Structure
-
-```
-
-Quotes\_Web\_Scraper/
-
-│── Quotes\_Scraper.py
-
-│── Quotes\_Scraping.xlsx
-
+```text
+Quotes_Web_Scraper/
+│── Quotes_Scraper.py
+│── Quotes_Scraping.xlsx
 │── README.md
-
 │── requirements.txt
-
 │── .gitignore
-
 └── Screenshots/
-
-&#x20;   └── output.png
-
+    └── output.png
 ```
 
+## Installation
 
-
-\## Installation
-
-
-
-1\. Clone the repository:
-
-
+### 1. Clone the repository
 
 ```bash
-
 git clone https://github.com/fizajaleel03/Quotes-web-scraper.git
-
 ```
 
-
-
-2\. Navigate to the project folder:
-
-
+### 2. Navigate to the project folder
 
 ```bash
-
 cd Quotes-web-scraper
-
 ```
 
-
-
-3\. Install the required libraries:
-
-
+### 3. Install the required libraries
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
-
-
-4\. Run the scraper:
-
-
+### 4. Run the scraper
 
 ```bash
-
-python Quotes\_Scraper.py
-
+python Quotes_Scraper.py
 ```
 
-
-
-\## Output
-
-
+## Output
 
 The scraper generates an Excel file named:
 
-
-
-```
-
-Quotes\_Scraping.xlsx
-
-```
-
-
+`Quotes_Scraping.xlsx`
 
 containing the following columns:
 
+- Quote
+- Author
 
+## Screenshot
 
-\- Quote
+![Sample Output](Screenshots/output.png)
 
-\- Author
+## Author
 
-
-
-\## Screenshot
-
-
-
-A sample output is available in the `screenshots` folder.
-
-
-
-\## Sample Output
-
-
-
-!\[Sample Output](Screenshots/output.png)
-
-
-
-\## Author
-
-
-
-Fiza Jaleel
-
+**Fiza Jaleel**
